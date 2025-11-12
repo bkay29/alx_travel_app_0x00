@@ -18,7 +18,7 @@ schema_view = get_schema_view(
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("api/", include("listings.urls")),  # ensure listings.urls exists
+    path("api/listings/", include("alx_travel_app.listings.urls")),  # include app URLs
     # swagger json/yaml
     re_path(r"^swagger(?P<format>\.json|\.yaml)$",
             schema_view.without_ui(cache_timeout=0), name="schema-json"),

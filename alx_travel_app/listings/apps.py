@@ -1,6 +1,7 @@
-from django.apps import AppConfig
 
+from django.apps import AppConfig
 
 class ListingsConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'listings'
+    name = 'alx_travel_app.listings'  # full path
+
